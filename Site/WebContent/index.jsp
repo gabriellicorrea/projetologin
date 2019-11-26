@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<form action="index.jsp" method="post">
+	<form action="BemVindo.jsp" method="post">
 	Login: <br/><input type="text" name="login"><br/>
 	Senha: <br/><input type="password" name="senha"><br/>
 	
