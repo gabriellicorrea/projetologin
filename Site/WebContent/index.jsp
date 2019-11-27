@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <script src='https://www.google.com/recaptcha/api.js'></script>
+<link rel="stylesheet" type="text/css" href="style/style.css">
 <title>Login e Senha</title>
 </head>
 <body>
@@ -15,7 +16,10 @@
 	
 	<br/>
 	
-	<div class="g-recaptcha" data-sitekey="6LfXfcQUAAAAAOodvXvgswdGpko3qcTKJ2_8xQZN"></div>
+	<div class="g-recaptcha" data-sitekey="6LfXfcQUAAAAAOodvXvgswdGpko3qcTKJ2_8xQZN"> 
+		
+	</div>
+	
 	
 	<input type="submit" value="logar">
 
@@ -27,7 +31,8 @@
 		if(usuario!=null && senha!=null && !usuario.isEmpty() && !senha.isEmpty()){
 			session.setAttribute("usuario", usuario);
 		}
-
+		
+		
 	%>
 	
 
