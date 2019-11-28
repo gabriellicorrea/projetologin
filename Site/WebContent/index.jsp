@@ -9,21 +9,26 @@
 <title>Login e Senha</title>
 </head>
 <body>
-
-	<form action="BemVindo.jsp" method="post">
-	Login: <br/><input type="text" name="nome"><br/>
-	Senha: <br/><input type="password" name="senha"><br/>
-	
-	<br/>
-	
-	<div class="g-recaptcha" data-sitekey="6LfXfcQUAAAAAOodvXvgswdGpko3qcTKJ2_8xQZN"> 
+	<div class="container">
+       <div class="box">
+       
+       		<h1>Faça seu login</h1>
+			<form action="BemVindo.jsp" method="post">
+			Login: <br/><input type="text" name="nome"><br/>
+			Senha: <br/><input type="password" name="senha"><br/>
+			
+			<br/>
+			
+			<div class="g-recaptcha" data-sitekey="6LfXfcQUAAAAAOodvXvgswdGpko3qcTKJ2_8xQZN"> 
+				
+			</div>
+			
+			
+			<input type="submit" value="logar">
 		
+			</form>
+		</div>
 	</div>
-	
-	
-	<input type="submit" value="logar">
-
-	</form>
 	<%-- 
 		String usuario = request.getParameter("login");
 		String senha = request.getParameter("senha");

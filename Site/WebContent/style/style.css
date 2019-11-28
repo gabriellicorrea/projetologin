@@ -1,4 +1,33 @@
-body{
-	
+
+
+
+
+
+.container {
+         width: 100vw;
+         height: 100vh;
+       
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+}
+.box {
+         width: 350px;
+         height: 350px;
+         background: #fff;
+         margin: 10px 50px 20px;
+         border-color: black;
+}
+body {
+        margin: 0px;
+}
+
+form{
 	margin: 10px 50px 20px;
+}
+
+h1{
+	text-align: center;
+	
 }
