@@ -7,8 +7,11 @@
 <title>Bem Vindo!!</title>
 </head>
 <body>
+	<%
+		String nome = request.getParameter("nome");
+		out.println("Bem vindo(a), " + nome+ "!");
 	
-	<h1>Seja Bem Vindo!</h1>
+	%>
 
 </body>
 </html>

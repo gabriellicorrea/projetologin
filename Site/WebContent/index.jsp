@@ -11,7 +11,7 @@
 <body>
 
 	<form action="BemVindo.jsp" method="post">
-	Login: <br/><input type="text" name="login"><br/>
+	Login: <br/><input type="text" name="nome"><br/>
 	Senha: <br/><input type="password" name="senha"><br/>
 	
 	<br/>
@@ -24,7 +24,7 @@
 	<input type="submit" value="logar">
 
 	</form>
-	<% 
+	<%-- 
 		String usuario = request.getParameter("login");
 		String senha = request.getParameter("senha");
 	
@@ -33,7 +33,7 @@
 		}
 		
 		
-	%>
+	--%>
 	
 
 </body>
