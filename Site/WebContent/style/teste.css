@@ -1,0 +1,39 @@
+
+
+
+
+
+.container {
+         width: 100vw;
+         height: 100vh;
+       
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+}
+.box {
+		width: 350px;
+		height: 350px;
+		margin: 10px 50px 20px;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		
+        
+}
+body {
+        margin: 0px;
+}
+
+form{
+	margin: 10px 10px 10px 10px;
+}
+
+h1,p{
+	text-align: center;
+	
+}
+
+.g-recaptcha{
+	
+}

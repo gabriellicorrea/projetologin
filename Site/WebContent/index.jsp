@@ -5,7 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <script src='https://www.google.com/recaptcha/api.js'></script>
-<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="style/teste.css">
 <title>Login e Senha</title>
 </head>
 <body>
@@ -13,6 +13,7 @@
        <div class="box">
        
        		<h1>Faça seu login</h1>
+       		<p>Oi :)</p>
 			<form action="BemVindo.jsp" method="post">
 			Login: <br/><input type="text" name="nome"><br/>
 			Senha: <br/><input type="password" name="senha"><br/>
@@ -24,19 +25,19 @@
 			</div>
 			
 			
-			<input type="submit" value="logar">
+			<input type="submit" value="entrar">
 		
 			</form>
 		</div>
 	</div>
-	<%-- 
-		String usuario = request.getParameter("login");
+	<%--
+		String usuario = request.getParameter("nome");
 		String senha = request.getParameter("senha");
 	
 		if(usuario!=null && senha!=null && !usuario.isEmpty() && !senha.isEmpty()){
 			session.setAttribute("usuario", usuario);
 		}
-		
+	
 		
 	--%>
 	

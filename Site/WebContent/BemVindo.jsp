@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="style/style.css">
 <title>Bem Vindo!!</title>
 </head>
 <body>
