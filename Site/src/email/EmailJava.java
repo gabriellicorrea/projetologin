@@ -13,22 +13,25 @@ public class EmailJava {
 	public EmailJava() {
 	}
 	
-	public void enviarEmail(){
+	public void enviarEmail(String de, String para, String msg){
+		
+		
+		System.out.println("para: " + para);
+		System.out.println("msg: " + msg);
 		
 		try {
-			Email email = new SimpleEmail();
+			org.apache.commons.mail.Email email = new SimpleEmail();
 			email.setHostName("smtp.gmail.com"); 
 			email.setSmtpPort(587);
-			email.setAuthenticator(new DefaultAuthenticator("gaabicorrea05@gmail.com", "gabriellicorrea"));
+			email.setAuthenticator(new DefaultAuthenticator("gabiateste@gmail.com", "bolodechocolate"));
 			email.setSSLOnConnect(true);
-			email.setFrom("gaabicorrea05@gmail.com");
-			email.setSubject("Testando email enviado pelo java");
-			email.setMsg("hello biaaa e gabi");
-			email.addTo("gabriellicorrea7@gmail.com","bianca.duarte.barreto@hotmail.com");
+			email.setFrom("gabriellicorrea7@gmail.com");
+			email.setSubject("");
+			email.setMsg(msg);
+			email.addTo(para);
 			email.send();
 		}catch(EmailException ex) {
 			Logger.getLogger(EmailJava.class.getName()).log(Level.SEVERE, null, ex);
 		}
 	}
-	
 }

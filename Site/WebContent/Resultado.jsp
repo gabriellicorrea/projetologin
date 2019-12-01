@@ -1,4 +1,4 @@
-<%@page import="emaill.Email"%>
+<%@page import="email.Email"%>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -22,7 +22,7 @@
 		System.out.println("para: " + nome);
 		System.out.println("msg: " + mensagem);
 		
-		email.enviarEmail3(de, nome, mensagem);
+		email.enviarEmail(de, nome, mensagem);
 		
 	
 	
