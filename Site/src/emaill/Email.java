@@ -1,4 +1,4 @@
-package email;
+package emaill;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -12,7 +12,7 @@ public class Email {
 	public Email() {
 	}
 	
-	public void enviarEmail(String de, String para, String msg){
+	public void enviarEmail3(String de, String para, String msg){
 		
 	
 		System.out.println("para: " + para);

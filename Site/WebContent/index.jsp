@@ -1,3 +1,4 @@
+<%@page import="email.Email"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -5,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <script src='https://www.google.com/recaptcha/api.js'></script>
-<link rel="stylesheet" type="text/css" href="style/teste.css">
+<link rel="stylesheet" type="text/css" href="style/style.css">
 <title>Login e Senha</title>
 </head>
 <body>
@@ -14,11 +15,12 @@
        
        		<h1>Faça seu login</h1>
        		<p>Oi :)</p>
-			<form action="BemVindo.jsp" method="post">
+			<form action="EnviarEmail.jsp" method="post">
 			Login: <br/><input type="text" name="nome"><br/>
 			Senha: <br/><input type="password" name="senha"><br/>
 			
 			<br/>
+<p>oiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
 			
 			<div class="g-recaptcha" data-sitekey="6LfXfcQUAAAAAOodvXvgswdGpko3qcTKJ2_8xQZN"> 
 				
@@ -30,6 +32,8 @@
 			</form>
 		</div>
 	</div>
+	
+
 	<%--
 		String usuario = request.getParameter("nome");
 		String senha = request.getParameter("senha");

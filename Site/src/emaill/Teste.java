@@ -2,7 +2,7 @@ package emaill;
 
 import javax.swing.JOptionPane;
 
-public class TesteSite {
+public class Teste {
 	
 	public static void main(String[] args) {
 		try {

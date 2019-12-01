@@ -4,15 +4,20 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="style/style.css">
-<title>Bem Vindo!!</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<%
-		String nome = request.getParameter("nome");
-		out.println("Bem vindo(a), " + nome+ "!");
-	
-	%>
 
+
+	<form action="Resultado.jsp" method="post">
+	
+	<p>Envie seu email</p>
+		para: <br/><input type="text" name="nome"><br/>
+
+		mensagem:<br/><textarea name="mensagem" cols="40" rows="10" placeholder="Digite sua mensagem"></textarea><br/>
+		
+	
+		<input type="submit" value="Enviar">
+	</form>
 </body>
 </html>
