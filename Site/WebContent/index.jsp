@@ -14,12 +14,11 @@
        
        		<h1>Faça seu login</h1>
        		<p>Oi :)</p>
-			<form action="EnviarEmail.jsp" method="post">
+			<form action="index.jsp" method="post">
 			Login: <br/><input type="text" name="nome"><br/>
 			Senha: <br/><input type="password" name="senha"><br/>
 			
 			<br/>
-<p>oiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
 			
 			<div class="g-recaptcha" data-sitekey="6LfXfcQUAAAAAOodvXvgswdGpko3qcTKJ2_8xQZN"> 
 				
@@ -29,21 +28,23 @@
 			<input type="submit" value="entrar">
 		
 			</form>
+			
+			<%
+				String nome = request.getParameter("nome");
+				String senha = request.getParameter("senha");
+		
+				if(nome != null && senha != null && !nome.isEmpty() && !senha.isEmpty()){
+					session.setAttribute("nome", nome);				
+					response.sendRedirect("EnviarEmail.jsp");
+				}
+			%>
+			
+			
+			
 		</div>
 	</div>
 	
 
-	<%--
-		String usuario = request.getParameter("nome");
-		String senha = request.getParameter("senha");
-	
-		if(usuario!=null && senha!=null && !usuario.isEmpty() && !senha.isEmpty()){
-			session.setAttribute("usuario", usuario);
-		}
-	
-		
-	--%>
-	
 
 </body>
 </html>

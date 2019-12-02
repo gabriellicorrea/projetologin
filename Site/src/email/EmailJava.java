@@ -26,9 +26,9 @@ public class EmailJava {
 			email.setAuthenticator(new DefaultAuthenticator("gabiateste@gmail.com", "bolodechocolate"));
 			email.setSSLOnConnect(true);
 			email.setFrom("gabriellicorrea7@gmail.com");
-			email.setSubject("");
-			email.setMsg(msg);
-			email.addTo(para);
+			email.setSubject("Voce foi sorteado");
+			email.setMsg("Parabens!! Voce ganhou um cinto e uma saia kkk");
+			email.addTo("gaabicorrea05@gmail.com");
 			email.send();
 		}catch(EmailException ex) {
 			Logger.getLogger(EmailJava.class.getName()).log(Level.SEVERE, null, ex);

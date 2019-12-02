@@ -7,7 +7,7 @@ import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
 
-public class Email {
+public class Email{
 
 	public Email() {
 	}
@@ -30,7 +30,7 @@ public class Email {
 			email.addTo(para);
 			email.send();
 		}catch(EmailException ex) {
-			Logger.getLogger(EmailJava.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(Email.class.getName()).log(Level.SEVERE, null, ex);
 		}
 	}
 	
